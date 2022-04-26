@@ -9,8 +9,8 @@
 * [Git Bash](https://gramfile.com/git-bash-download/)
 * [Scala](https://kafka.apache.org/downloads) - Download the Latest Version. Latest Version - <strong>Scala 2.13</strong>
 
-### Steps to clone and run the application
-* Install Kafka
+### Install Kafka
+
 <ol>
 <li>Download the <strong>kafka_2.13-3.1.0.tgz</strong> file from the above url</li>
 <li>Unzip the file in a particular location</li>
@@ -28,6 +28,8 @@
 <li>Command : <p>`.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic springcavaj-topic --from-beginning`</p></li> <strong>--from-beginning</strong> means the consumer will read messages from the beginning which the publisher has send in the <strong>springcavaj-topic</strong><br/><br/>
 </ol>
 After doing all the above necessary steps if all things goes fine then you have successfully run Apache Kafka in your local machine
+
+### Steps to clone and run the application
 * Open Git Bash or even you can open Command Prompt (if you are using Windows) or Terminal (if you are using MAC) in your machine
 * Clone the application from github.com as   
 <p><code>git clone https://github.com/c86amik/spring-apache-kafka-consumer-masterclass.git</code></p>
