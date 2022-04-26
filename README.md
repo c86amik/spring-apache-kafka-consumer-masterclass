@@ -16,16 +16,16 @@
 <li>Unzip the file in a particular location</li>
 <li>Let's say you have unzip Kafka in <strong>D:/Apache_Kafka</strong> folder, then go to that folder and open Command Prompt in every cases
 <li>Open the Command Prompt and <strong>Start the Zookeeper</strong></li>
-<li> Command : `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`</li>
+<li> Command 	:		 `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`</li>
 <li>Open a new Command Prompt and <strong>Start Apache Kafka Server</strong></li>
-<li>Command : `.\bin\windows\kafka-server-start.bat .\config\server.properties`</li>
+<li>Command 	:		 `.\bin\windows\kafka-server-start.bat .\config\server.properties`</li>
 <li>Open a new Command Prompt and <strong>Create a Topic named `springcavaj-topic` that has 1 partition and 1 replica</strong></li>
-<li>Command : `.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic springcavaj-topic`</li>
+<li>Command 	:		 `.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic springcavaj-topic`</li>
 <li>Open a new Command Prompt and <strong>Create a producer to send message in `springcavaj-topic`</strong></li>
-<li>Command : `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic springcavaj-topic`</li>
+<li>Command 	:		 `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic springcavaj-topic`</li>
 <strong>`Hello Kafka`</strong></li> - This is the message as send from the Producer
 <li>Open a new Command Prompt and <strong>Start the Consumer who will consume the message from `springcavaj-topic`</strong></li>
-<li>Command : `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic springcavaj-topic --from-beginning`</li> <strong>'--from-beginning'</strong> means the consumer will read messages from the beginning which the publisher has send in the <strong>springcavaj-topic</strong>
+<li>Command 	:		 `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic springcavaj-topic --from-beginning`</li> <strong>'--from-beginning'</strong> means the consumer will read messages from the beginning which the publisher has send in the <strong>springcavaj-topic</strong>
 </ol>
 After doing all the above necessary steps if all things goes fine then you have successfully run Apache Kafka in your local machine
 * Open Git Bash or even you can open Command Prompt (if you are using Windows) or Terminal (if you are using MAC) in your machine
