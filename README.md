@@ -23,14 +23,14 @@
 <li>Command : <p>`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic springcavaj-topic`</p></li>
 <li>Open a new Command Prompt and <strong>Create a producer to send message in `springcavaj-topic`</strong></li>
 <li>Command : <p>`.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic springcavaj-topic`</p></li>
-<strong><p>`Hello Kafka`</p></strong></li> This is the message as send from the Producer
+<strong><p>`Hello Kafka`</p></strong></li> This is the message as send from the Producer<br/><br/>
 <li>Open a new Command Prompt and <strong>Start the Consumer who will consume the message from `springcavaj-topic`</strong></li>
-<li>Command : <p>`.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic springcavaj-topic --from-beginning`</p></li> <strong>--from-beginning</strong> means the consumer will read messages from the beginning which the publisher has send in the <strong>springcavaj-topic</strong>
+<li>Command : <p>`.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic springcavaj-topic --from-beginning`</p></li> <strong>--from-beginning</strong> means the consumer will read messages from the beginning which the publisher has send in the <strong>springcavaj-topic</strong><br/><br/>
 </ol>
 After doing all the above necessary steps if all things goes fine then you have successfully run Apache Kafka in your local machine
 * Open Git Bash or even you can open Command Prompt (if you are using Windows) or Terminal (if you are using MAC) in your machine
 * Clone the application from github.com as   
-<code>git clone https://github.com/c86amik/spring-apache-kafka-consumer-masterclass.git</code>
+<p><code>git clone https://github.com/c86amik/spring-apache-kafka-consumer-masterclass.git</code></p>
 * Open either <strong>STS</strong> or <strong>Eclipse</strong> and import the application as <strong>Maven</strong> project
 * After the application got successfully imported in either <strong>STS</strong> or <strong>Eclipse</strong>
 * Right Click on the application, select the <strong>Run As</strong> option, and then select <strong>Spring Boot App</strong>
