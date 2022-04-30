@@ -13,6 +13,8 @@
 
 ### Install Kafka
 
+#### Below Steps are for the Windows OS
+
 <ol>
 <li>Download the <strong>kafka_2.13-3.1.0.tgz</strong> file from the above url</li>
 <li>Unzip the file in a particular location</li>
