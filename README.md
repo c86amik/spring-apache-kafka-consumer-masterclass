@@ -8,6 +8,8 @@
 * [Apache Maven](https://maven.apache.org/download.cgi)
 * [Git Bash](https://gramfile.com/git-bash-download/)
 * [Scala](https://kafka.apache.org/downloads) - Download the Latest Version. Latest Version - <strong>Scala 2.13</strong>
+* [MySQL](https://dev.mysql.com/downloads/mysql/) - Download the Community Edition. If it is a problem then you can download another one as provided below
+* [SQLYog](https://sqlyog.en.softonic.com/) - SQLYog. You can use this as replacement of MySQL
 
 ### Install Kafka
 
@@ -35,5 +37,17 @@ After doing all the above necessary steps if all things goes fine then you have 
 <code>git clone https://github.com/c86amik/spring-apache-kafka-consumer-masterclass.git</code>
 * Open either <strong>STS</strong> or <strong>Eclipse</strong> and import the application as <strong>Maven</strong> project
 * After the application got successfully imported in either <strong>STS</strong> or <strong>Eclipse</strong>
-* Right Click on the application, select the <strong>Run As</strong> option, and then select <strong>Spring Boot App</strong>
+* Start the ZooKeeper - <p>`.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`</p>
+* Start the Apache Kafka Server - <p>`.\bin\windows\kafka-server-start.bat .\config\server.properties`</p>
+* As it is a consumer application so first you have to create the Topic - <p>`.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic springcavaj-topic`</p>
+* Start the Producer - <p>`.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic springcavaj-topic`</p>
+* Send the message as - <p><code>{"firstName" : "First Name", "middleName" : "", "lastName" : "Last Name", "mobileNo" : "1234567890", "email" : "test@email.com", "panNo" : "ABCDE1234F"}</code></p>
+* After that Right Click on the application, select the <strong>Run As</strong> option, and then select <strong>Spring Boot App</strong>
 * The application will start in the port <strong>7114</strong>
+* As verification you will be able to see the message in the logs
+* And once after consuming it will store in the DB. I have used MySQL here.
+* You can check the data in the DB.
+
+### Dummy JSON Object
+* Request Object pass through Command Prompt
+{"firstName" : "First Name", "middleName" : "", "lastName" : "Last Name", "mobileNo" : "1234567890", "email" : "test@email.com", "panNo" : "ABCDE1234F"}
