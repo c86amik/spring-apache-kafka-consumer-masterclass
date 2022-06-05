@@ -34,6 +34,7 @@
 After doing all the above necessary steps if all things goes fine then you have successfully run Apache Kafka in your local machine
 
 ### Steps to clone and run the application
+* Install MySQL. Complete installation steps of [MySQL Workbench](https://www.sqlshack.com/how-to-install-mysql-database-server-8-0-19-on-windows-10/) are provided
 * Open either Git Bash or open CMD (if you are using Windows) or Terminal (if you are using MAC) in your machine
 * Clone the application from github.com as   
 <code>git clone https://github.com/c86amik/spring-apache-kafka-consumer-masterclass.git</code>
