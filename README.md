@@ -46,7 +46,7 @@ After doing all the above necessary steps if all things goes fine then you have 
 * Start the Producer - <p>`.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic springcavaj-topic`</p>
 * Send the message as - <p><code>{"firstName" : "First Name", "middleName" : "", "lastName" : "Last Name", "mobileNo" : "1234567890", "email" : "test@email.com", "panNo" : "ABCDE1234F"}</code></p>
 * After that Right Click on the application, select the <strong>Run As</strong> option, and then select <strong>Spring Boot App</strong>
-* The application will start in the port <strong>7114</strong>
+* The application will start in the port <strong>7117</strong>
 * As verification you will be able to see the message in the logs
 * And once after consuming it will store in the DB. I have used MySQL here.
 * You can check the data in the DB.
