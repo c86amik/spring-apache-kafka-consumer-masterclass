@@ -6,7 +6,7 @@
 * [Java 1.8](https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html)
 * [Spring tool Suite](https://spring.io/tools) or [Eclipse](https://www.eclipse.org/downloads/packages/)
 * [Apache Maven](https://maven.apache.org/download.cgi)
-* [Git Bash](https://gramfile.com/git-bash-download/)
+* [Git Bash](https://git-scm.com/downloads)
 * [Kafka](https://kafka.apache.org/downloads) - Download the Latest Version. Latest Version - <strong>Kafka 2.13</strong>
 * [MySQL](https://dev.mysql.com/downloads/mysql/) - Download the Community Edition. If it is a problem then you can download another one as provided below
 * [SQLYog](https://sqlyog.en.softonic.com/) - SQLYog. You can use this as replacement of MySQL
